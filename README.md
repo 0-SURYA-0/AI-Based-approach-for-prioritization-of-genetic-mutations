@@ -55,7 +55,7 @@ Coming soon...
 
 ## 🧩 Architecture Overview
 
-mermaid
+```mermaid
 graph TD
 A[User Input Mutation] --> B[Model 1: Mutation Prioritization]
 B -->|Low Risk| Z[Return Result]
@@ -64,8 +64,7 @@ C -->|No Disease| Z
 C -->|Likely Disease| D[Model 3: Evolution Simulation]
 D --> E[Species Evolution via Ensembl/NCBI]
 E --> F[Visualization of Evolutionary Data]
-
----
+```
 
 ## 🛠 Project Setup
 
