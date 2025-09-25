@@ -1,0 +1,40 @@
+############################################################
+# Project Requirements
+# Pin versions to known stable releases; adjust as needed.
+# If you upgrade TensorFlow, ensure compatibility with protobuf & numpy.
+############################################################
+
+# Core scientific stack
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.0
+seaborn==0.13.2
+scikit-learn==1.5.1
+
+# Bioinformatics
+biopython==1.83
+
+# Deep learning
+tensorflow==2.13.0   # Adjust if GPU or newer version required
+
+# NLP / (currently unused in active notebooks but kept if planned)
+transformers==4.41.2
+
+# Backend (Flask API)
+Flask==3.0.3
+flask-cors==4.0.1
+
+# Serialization / protocol buffers (tensorflow dependency)
+protobuf==4.25.3
+
+# Optional: add these if future features require them (uncomment as needed)
+tqdm==4.66.4
+python-dotenv==1.0.1
+gunicorn==21.2.0           
+
+############################################################
+# Notes:
+# - If using GPU TensorFlow, install appropriate tensorflow-gpu or pip extra.
+# - Keep transformers only if you plan to integrate sequence embeddings.
+# - After modifying, run: pip install -r requirements.txt
+############################################################
